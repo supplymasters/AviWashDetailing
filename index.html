@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avi Wash Detailing - Premium Car Care Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-red': '#dc2626',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white font-sans">
+
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">
+                    <span class="text-white">Avi Wash</span>
+                    <span class="text-brand-red ml-2">Detailing</span>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-brand-red transition-colors">Home</a>
+                    <a href="#services" class="hover:text-brand-red transition-colors">Services</a>
+                    <a href="#pricing" class="hover:text-brand-red transition-colors">Pricing</a>
+                    <a href="#contact" class="hover:text-brand-red transition-colors">Contact</a>
+                </nav>
+            </div>
+            
+            <!-- Mobile Navigation Menu -->
+            <nav id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="hover:text-brand-red transition-colors">Home</a>
+                    <a href="#services" class="hover:text-brand-red transition-colors">Services</a>
+                    <a href="#pricing" class="hover:text-brand-red transition-colors">Pricing</a>
+                    <a href="#contact" class="hover:text-brand-red transition-colors">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('banner.jpg');">
+            <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Premium Car Detailing
+                <span class="block text-brand-red">Services</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl mx-auto">
+                Transform your vehicle with our professional detailing services. We bring showroom quality to your driveway.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#pricing" class="bg-brand-red hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+                    View Packages
+                </a>
+                <a href="#contact" class="border-2 border-white hover:bg-white hover:text-black text-white font-bold py-4 px-8 rounded-lg transition-colors text-lg">
+                    Get Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section id="services" class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Professional car detailing services designed to keep your vehicle looking its absolute best.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-gray-900 p-6 rounded-lg mb-4">
+                        <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Exterior Wash</h3>
+                        <p class="text-gray-400">Deep cleaning and protection for your car's exterior finish.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gray-900 p-6 rounded-lg mb-4">
+                        <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Interior Detailing</h3>
+                        <p class="text-gray-400">Complete interior cleaning, sanitizing, and conditioning.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-gray-900 p-6 rounded-lg mb-4">
+                        <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Premium Protection</h3>
+                        <p class="text-gray-400">Advanced waxing and coating for long-lasting protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Choose Your Package</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    Select the perfect detailing package for your vehicle's needs and budget.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Bronze Package -->
+                <div class="bg-gray-900 rounded-lg p-8 text-center relative border-2 border-gray-800 hover:border-yellow-600 transition-colors">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-yellow-600 text-black px-4 py-1 rounded-full text-sm font-bold">BRONZE</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mt-4 mb-4 text-yellow-600">Bronze Package</h3>
+                    <div class="text-4xl font-bold mb-6">$49</div>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Exterior wash & rinse
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Wheel cleaning
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Interior vacuum
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Window cleaning
+                        </li>
+                    </ul>
+                    <a href="sms:+17148140157?body=Hi! I'm interested in the Bronze Package ($49)." class="w-full bg-yellow-600 hover:bg-yellow-700 text-black font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
+                        Choose Bronze
+                    </a>
+                </div>
+                
+                <!-- Gold Package -->
+                <div class="bg-gray-900 rounded-lg p-8 text-center relative border-2 border-yellow-500 transform md:scale-105 shadow-2xl">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-yellow-500 text-black px-4 py-1 rounded-full text-sm font-bold">MOST POPULAR</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mt-4 mb-4 text-yellow-500">Gold Package</h3>
+                    <div class="text-4xl font-bold mb-6">$89</div>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Everything in Bronze
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Premium wax application
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Interior deep clean
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Dashboard conditioning
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Tire shine
+                        </li>
+                    </ul>
+                    <a href="sms:+17148140157?body=Hi! I'm interested in the Gold Package ($89)." class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
+                        Choose Gold
+                    </a>
+                </div>
+                
+                <!-- Platinum Package -->
+                <div class="bg-gray-900 rounded-lg p-8 text-center relative border-2 border-gray-400 hover:border-gray-300 transition-colors">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-gray-400 text-black px-4 py-1 rounded-full text-sm font-bold">PLATINUM</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mt-4 mb-4 text-gray-300">Platinum Package</h3>
+                    <div class="text-4xl font-bold mb-6">$149</div>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Everything in Gold
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Ceramic coating protection
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Engine bay cleaning
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Leather conditioning
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Paint correction
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            30-day guarantee
+                        </li>
+                    </ul>
+                    <a href="sms:+17148140157?body=Hi! I'm interested in the Platinum Package ($149)." class="w-full bg-gray-400 hover:bg-gray-300 text-black font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
+                        Choose Platinum
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Get In Touch</h2>
+            <p class="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
+                Ready to give your car the premium treatment it deserves? Contact us today to schedule your detailing service.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold mb-2">Phone</h3>
+                    <p class="text-gray-400">+1 (714) 814-0157</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">Email</h3>
+                    <p class="text-gray-400">info@aviwashdetailing.com</p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-2">Service Area</h3>
+                    <p class="text-gray-400">LA & OC Counties</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Footer with Book Now Button (Hidden by default) -->
+    <footer id="sticky-footer" class="fixed bottom-0 left-0 right-0 bg-black/95 backdrop-blur-sm border-t border-gray-800 p-4 transform translate-y-full transition-transform duration-300 z-40">
+        <div class="container mx-auto">
+            <div class="flex flex-col sm:flex-row items-center justify-between">
+                <div class="mb-4 sm:mb-0">
+                    <p class="text-sm text-gray-400">Ready to book your detailing service?</p>
+                </div>
+                <a href="sms:+17148140157?body=Hi! I'd like to book a car detailing service." class="bg-brand-red hover:bg-red-700 text-white font-bold py-3 px-8 rounded-lg transition-colors text-lg w-full sm:w-auto text-center inline-block">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Intersection Observer for sticky footer
+        const pricingSection = document.getElementById('pricing');
+        const stickyFooter = document.getElementById('sticky-footer');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Show footer when pricing section is visible
+                    stickyFooter.classList.remove('translate-y-full');
+                } else {
+                    // Hide footer when pricing section is not visible
+                    stickyFooter.classList.add('translate-y-full');
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of pricing section is visible
+        });
+        
+        observer.observe(pricingSection);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
