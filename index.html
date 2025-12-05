@@ -23,9 +23,8 @@
     <header class="sticky top-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold">
-                    <span class="text-white">Avi Wash</span>
-                    <span class="text-brand-red ml-2">Detailing</span>
+                <div class="flex items-center">
+                    <img src="aw-logo.png" alt="Avi Wash Detailing" class="h-16 md:h-20 w-auto">
                 </div>
                 
                 <!-- Mobile Menu Button -->
@@ -133,8 +132,8 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="py-20 px-4">
-        <div class="container mx-auto max-w-6xl">
+    <section id="pricing" class="py-20 px-4 overflow-visible">
+        <div class="container mx-auto max-w-6xl overflow-visible">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Choose Your Package</h2>
                 <p class="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -142,137 +141,136 @@
                 </p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 overflow-visible">
                 
-                <!-- Bronze Package -->
-                <div class="bg-gray-900 rounded-lg p-8 text-center relative border-2 border-gray-800 hover:border-yellow-600 transition-colors">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <span class="bg-yellow-600 text-black px-4 py-1 rounded-full text-sm font-bold">BRONZE</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mt-4 mb-4 text-yellow-600">Bronze Package</h3>
-                    <div class="text-4xl font-bold mb-6">$49</div>
+                <!-- Essential Clean Package -->
+                <div class="bg-gray-900 rounded-lg p-8 text-center relative border-2 border-gray-800 hover:border-brand-red transition-colors">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Essential Clean</h3>
+                    <div class="text-4xl font-bold mb-6">$60</div>
                     <ul class="text-left space-y-3 mb-8">
                         <li class="flex items-center">
-                            <svg class="w-5 h-5 text-yellow-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-brand-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Exterior wash & rinse
+                            Basic exterior hand wash
                         </li>
                         <li class="flex items-center">
-                            <svg class="w-5 h-5 text-yellow-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-brand-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Wheel cleaning
+                            Basic interior vacuuming
                         </li>
                         <li class="flex items-center">
-                            <svg class="w-5 h-5 text-yellow-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 text-brand-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Interior vacuum
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-yellow-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Window cleaning
+                            Basic interior dusting
                         </li>
                     </ul>
-                    <a href="sms:+17148140157?body=Hi! I'm interested in the Bronze Package ($49)." class="w-full bg-yellow-600 hover:bg-yellow-700 text-black font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
-                        Choose Bronze
+                    <a href="sms:+17148140157?body=Hi! I'm interested in the Essential Clean package ($60)." class="w-full bg-brand-red hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
+                        Choose Essential Clean
                     </a>
                 </div>
                 
-                <!-- Gold Package -->
-                <div class="bg-gray-900 rounded-lg p-8 text-center relative border-2 border-yellow-500 transform md:scale-105 shadow-2xl">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <!-- Exterior Shine Package -->
+                <div class="bg-gray-900 rounded-lg p-8 text-center relative border-2 border-gray-800 hover:border-brand-red transition-colors">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Exterior Shine</h3>
+                    <div class="text-4xl font-bold mb-6">$75</div>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-brand-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Wheels washed
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-brand-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Hand wash & wax exterior
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-brand-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Basic vacuum & dusting interior
+                        </li>
+                    </ul>
+                    <a href="sms:+17148140157?body=Hi! I'm interested in the Exterior Shine package ($75)." class="w-full bg-brand-red hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
+                        Choose Exterior Shine
+                    </a>
+                </div>
+                
+                <!-- Interior Revival Package -->
+                <div class="bg-gray-900 rounded-lg p-8 text-center relative border-2 border-gray-800 hover:border-brand-red transition-colors">
+                    <h3 class="text-2xl font-bold mb-4 text-white">Interior Revival</h3>
+                    <div class="text-4xl font-bold mb-6">$90</div>
+                    <ul class="text-left space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-brand-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Deep interior cleaning
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-brand-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Vacuum, dusting, steam & extracting
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-brand-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Quick basic exterior wash
+                        </li>
+                    </ul>
+                    <a href="sms:+17148140157?body=Hi! I'm interested in the Interior Revival package ($90)." class="w-full bg-brand-red hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
+                        Choose Interior Revival
+                    </a>
+                </div>
+                
+                <!-- Complete Transformation Package -->
+                <div class="bg-gray-900 rounded-lg p-8 text-center relative border-2 border-yellow-500 transform md:scale-105 shadow-2xl overflow-visible">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10 whitespace-nowrap">
                         <span class="bg-yellow-500 text-black px-4 py-1 rounded-full text-sm font-bold">MOST POPULAR</span>
                     </div>
-                    <h3 class="text-2xl font-bold mt-4 mb-4 text-yellow-500">Gold Package</h3>
-                    <div class="text-4xl font-bold mb-6">$89</div>
+                    <h3 class="text-2xl font-bold mt-4 mb-4 text-yellow-500">Complete Transformation</h3>
+                    <div class="text-4xl font-bold mb-6">$125</div>
                     <ul class="text-left space-y-3 mb-8">
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Everything in Bronze
+                            Full interior deep cleaning
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Premium wax application
+                            Vacuuming, dusting, steaming & extracting
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Interior deep clean
+                            Full exterior wheel cleaning
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Dashboard conditioning
+                            Hand washed exterior
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-yellow-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            Tire shine
+                            Waxed exterior
                         </li>
                     </ul>
-                    <a href="sms:+17148140157?body=Hi! I'm interested in the Gold Package ($89)." class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
-                        Choose Gold
-                    </a>
-                </div>
-                
-                <!-- Platinum Package -->
-                <div class="bg-gray-900 rounded-lg p-8 text-center relative border-2 border-gray-400 hover:border-gray-300 transition-colors">
-                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                        <span class="bg-gray-400 text-black px-4 py-1 rounded-full text-sm font-bold">PLATINUM</span>
-                    </div>
-                    <h3 class="text-2xl font-bold mt-4 mb-4 text-gray-300">Platinum Package</h3>
-                    <div class="text-4xl font-bold mb-6">$149</div>
-                    <ul class="text-left space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Everything in Gold
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Ceramic coating protection
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Engine bay cleaning
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Leather conditioning
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            Paint correction
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-5 h-5 text-gray-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            30-day guarantee
-                        </li>
-                    </ul>
-                    <a href="sms:+17148140157?body=Hi! I'm interested in the Platinum Package ($149)." class="w-full bg-gray-400 hover:bg-gray-300 text-black font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
-                        Choose Platinum
+                    <a href="sms:+17148140157?body=Hi! I'm interested in the Complete Transformation package ($125)." class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg transition-colors inline-block text-center">
+                        Choose Complete Transformation
                     </a>
                 </div>
                 
